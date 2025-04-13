@@ -38,7 +38,7 @@
           <el-menu-item index="2-1">动态审核</el-menu-item>
           <el-menu-item index="2-2">物品审核</el-menu-item>
           <el-menu-item index="2-3">跑腿服务审核</el-menu-item>
-          <el-menu-item index="2-4">失物招领审核</el-menu-item>
+          <el-menu-item index="2-4">寻物启事审核</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="3">
           <template #title>
@@ -103,6 +103,8 @@ const select = (index) => {
     userStore.breadCrumb = "发布审核 > 物品审核"
   } else if (index === "2-3") {
     userStore.breadCrumb = "发布审核 > 跑腿服务审核"
+  } else if (index === "2-4") {
+    userStore.breadCrumb = "发布审核 > 寻物启事审核"
   }
 
   const url = routes[`${index}`]
