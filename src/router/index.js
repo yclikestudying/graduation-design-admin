@@ -96,6 +96,11 @@ const router = createRouter({
                     path: 'lost',
                     name: 'lost',
                     component: () => import('@/pages/publish/Lost.vue')
+                },
+                {
+                    path: 'groupChat',
+                    name: 'groupChat',
+                    component: () => import('@/pages/chat/GroupChat.vue')
                 }
             ]
         }

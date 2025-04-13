@@ -90,7 +90,8 @@ const select = (index) => {
     "2-1": "/home/article",
     "2-2": "/home/goods",
     "2-3": "/home/service",
-    "2-4": "/home/lost"
+    "2-4": "/home/lost",
+    "3-1": "/home/groupChat"
   }
 
   if (index === "1-1") {
@@ -105,6 +106,8 @@ const select = (index) => {
     userStore.breadCrumb = "发布审核 > 跑腿服务审核"
   } else if (index === "2-4") {
     userStore.breadCrumb = "发布审核 > 寻物启事审核"
+  } else if (index === "3-1") {
+    userStore.breadCrumb = "群聊管理 > 群聊管理"
   }
 
   const url = routes[`${index}`]
